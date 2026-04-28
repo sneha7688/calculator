@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e6f0ff); /* pastel bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Calculator container */
+.calculator {
+  width: 360px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f1f3f5;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1),
+              -8px -8px 20px rgba(255,255,255,0.7);
+}
+
+/* Display */
+.display {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: inset 3px 3px 8px rgba(0,0,0,0.05);
+}
+
+.input {
+  text-align: right;
+  font-size: 1.6rem;
+  color: #333; /* dark grey */
+}
+
+.result {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Base button */
+button {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  background: #e0e5ec; /* slightly darker pastel */
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1),
+              -3px -3px 8px rgba(255,255,255,0.7);
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-2px);
+  background: #d6dbe3;
+}
+
+/* Click effect */
+button:active {
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Operators */
+.operator {
+  background: #ffd6a5;
+}
+
+/* Equals button */
+.equals {
+  background: #a0c4ff;
+  grid-column: span 2;
+}
+
+/* Control buttons */
+.control {
+  background: #ffadad;
+}
